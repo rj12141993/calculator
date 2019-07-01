@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<h1>simple calculator</h1>
+
+<div class="firstin">
+	<h3>Enter First Number:</h3>
+	<input type="text" id="first" placeholder="Enter the no.">
+</div>
+
+<div class="secondin">
+	<h3>Enter Second  Number:</h3>
+	<input type="text" id="second" placeholder="Enter the no.">
+</div>
+
+<div>
+	<button class="button1" onclick="add()">Add</button><span id="sum" class="res"></span>
+</div>
+
+<div>
+	<button class="button2" onclick="subtract()">Subtract</button><span id="sub" class="res"></span>
+</div>
+
+<div>
+	<button class="button3" onclick="multiplication()">Multiplication</button><span id="mul" class="res"></span>	
+</div>
+
+<div>
+	<button class="button4" onclick="division()">Division</button><span id="divi" class="res"></span>
+</div>
+
+
+<script type="text/javascript">
+
+
+function add() {
+	 var first = parseInt(document.getElementById('first').value);
+ 	 var second = parseInt(document.getElementById('second').value);
+
+	var result = first + second;
+
+	document.getElementById('sum').innerHTML = result;
+
+}
+
+function subtract() {
+	 var first = parseInt(document.getElementById('first').value);
+ 	 var second = parseInt(document.getElementById('second').value);
+
+	var result = first - second;
+
+	document.getElementById('sub').innerHTML = result;
+
+}
+
+function multiplication() {
+	 var first = parseInt(document.getElementById('first').value);
+ 	 var second = parseInt(document.getElementById('second').value);
+
+	var result = first * second;
+
+	document.getElementById('mul').innerHTML = result;
+
+}
+
+function division() {
+	 var first = parseInt(document.getElementById('first').value);
+ 	 var second = parseInt(document.getElementById('second').value);
+
+	var result = first % second;
+
+	document.getElementById('divi').innerHTML = result;
+
+}
+
+ </script>
+
+</body>
+</html>
+
